@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>exercise7</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(113, 17, 133);
+      margin: 0 5px;
+    }
+    @media (max-width: 700px) {
+      .container {
+        flex-direction: column;
+        gap: 5px;
+      }
+    }
+    @media (max-width: 600px) {
+      .box {
+        background-color: rgb(5, 105, 112);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+</body>
+</html>
