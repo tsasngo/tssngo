@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box div {
+        height: 300px;
+        width: 300px;
+        background-color: rgb(16, 143, 175);
+    }
+
+    .box {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        gap: 15px;
+
+    }
+
+    @media only screen and (max-width:900px) {
+        .box {
+            display: grid;
+            grid-template-columns: auto auto auto
+        }
+       
+    }
+    @media only screen and (max-width:600px) {
+        .box {
+            display: grid;
+            grid-template-columns: auto auto
+        }
+       
+    }
+    @media only screen and (max-width:480px) {
+        .box {
+            display: grid;
+            grid-template-columns: auto
+        }
+       
+    }
+
+   
+</style>
+
+<body>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>
