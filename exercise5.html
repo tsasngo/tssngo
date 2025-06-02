@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>exercise5</title>
+  <style>
+    .exercise5-container {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 30px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .exercise5-item {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(36, 126, 19);
+    }
+
+    @media (max-width: 600px) {
+      .exercise5-container {
+        gap: 15px;
+      }
+    }
+
+    @media only screen and (max-width: 400px) {
+  .exercise5-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+   
+  </style>
+</head>
+<body>
+  <div class="exercise5-container">
+    <div class="exercise5-item"></div>
+    <div class="exercise5-item"></div>
+    <div class="exercise5-item"></div>
+    <div class="exercise5-item"></div>
+    <div class="exercise5-item"></div>
+    <div class="exercise5-item"></div>
+    <div class="exercise5-item"></div>
+    <div class="exercise5-item"></div>
+    <div class="exercise5-item"></div>
+  </div>
+</body>
+</html>
